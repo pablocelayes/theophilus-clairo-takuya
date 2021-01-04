@@ -72,13 +72,13 @@ GradientBoostingClassifier with sample weights showed a much better performance 
 
 
 ### Hyperaparameter tuning
- - I struggled for a while because tuned results were worse than out-of-the-box performance. Then I realized I wasn't passing sample weights to gridsearch.
- - Some simplifications I did for the sake of running time:
-  - The chosen grid is very simplistic
-  - I'm using only 3 folds. Usually I use 4 or 5 if there's enough data and time.
-  - I'm using grid search, but in a real-life scenario I would prefer some bayesian optimizer like hyperopt. 
+- I struggled for a while because tuned results were worse than out-of-the-box performance. Then I realized I wasn't passing sample weights to gridsearch.
+- Some simplifications I did for the sake of running time:
+	- The chosen grid is very simplistic
+	- I'm using only 3 folds. Usually I use 4 or 5 if there's enough data and time.
+	- I'm using grid search, but in a real-life scenario I would prefer some bayesian optimizer like hyperopt. 
 
- - Hyperparameter grid
+- Hyperparameter grid:
 
 ``` 
 {
