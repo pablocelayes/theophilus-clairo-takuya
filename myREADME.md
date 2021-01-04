@@ -46,13 +46,13 @@ python -m ipykernel install --user --name=dh-mkt-ds
 ## Classifier model
 
 
-###Metric
+### Metric
  - Primary: f1 score (suitable for imbalanced data)
  - Plot confusion matrix
  - Other possibilites: ROC AUC, MCC (Matthews Correlation Coefficient)
  - Depending on the application of the model we could have our own custom metric (for instance F-beta with beta chosen according to business criteria)
 
-###Algorithm choice
+### Algorithm choice
  
  In my work, I usually start off with a boosting algorithm like XGBoost, some of the main reasons for this are:
 
@@ -71,7 +71,7 @@ I did a quick comparison based on f1 performance on validation set of the follow
 GradientBoostingClassifier with sample weights showed a much better performance out-of-the-box (F1=0.584)
 
 
-###Hyperaparameter tuning
+### Hyperaparameter tuning
  - I struggled for a while because tuned results were worse than out-of-the-box performance. Then I realized I wasn't passing sample weights to gridsearch.
  - Some simplifications I did for the sake of running time:
   - The chosen grid is very simplistic
