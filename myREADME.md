@@ -4,6 +4,8 @@ conda create --name dh-mkt-ds python=3.8
 
 conda activate dh-mkt-ds
 
+install requirements from requirements.txt
+
 python -m ipykernel install --user --name=dh-mkt-ds
 
 ## Target
@@ -70,14 +72,17 @@ Note that we are including whether or not to use early stopping (`n_iter_no_chan
  - Best hyperparameters:
 
 	```
-	{'learning_rate': 0.1,
-	 'loss': 'deviance',
-	 'max_depth': 8,
-	 'max_features': 'sqrt',
-	 'min_samples_leaf': 50,
-	 'min_samples_split': 200,
-	 'n_estimators': 100,
-	 'subsample': 1.0}
+	{
+	  "learning_rate": 0.1,
+	  "loss": "deviance",
+	  "max_depth": 8,
+	  "max_features": "sqrt",
+	  "min_samples_leaf": 50,
+	  "min_samples_split": 200,
+	  "n_estimators": 100,
+	  "n_iter_no_change": null,
+	  "subsample": 1.0
+	}
 	```
 
  - Best F1 score: 
