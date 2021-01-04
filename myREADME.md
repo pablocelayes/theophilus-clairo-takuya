@@ -111,10 +111,9 @@ Note that we are including whether or not to use early stopping (`n_iter_no_chan
 	}
 	```
 
- - Best F1 score:
- 
-  - Mean CV: 0.583
-  - Re-fitted on all training data (scored on validation set): 0.5871
+ - Best F1 score: 
+	- Mean CV: 0.583
+	- Re-fitted on all training data (scored on validation set): 0.5871
 
 ### Model evaluation
 
