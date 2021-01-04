@@ -2,25 +2,27 @@
 
 The structure of the repo is as follows:
 
+```
 ├── data
-│   ├── dataset.csv                                                          -- my dataset of pre-processed features 
+│   ├── dataset.csv                                 -- my dataset of pre-processed features 
 │   ├── machine_learning_challenge_labeled_data.csv -- provided labels
-│   └── machine_learning_challenge_order_data.csv    -- provided data
-├── eda                                                                           -- Exploratory Data Analysis
-│   ├── labels.ipynb                                                         -- EDA on labels
-│   └── orders.ipynb                                                        -- EDA on orders data
+│   └── machine_learning_challenge_order_data.csv   -- provided data
+├── eda                                             -- Exploratory Data Analysis
+│   ├── labels.ipynb                                -- EDA on labels
+│   └── orders.ipynb                                -- EDA on orders data
 ├── model
 │   └── v0.1
-│       ├── 1.0-dataset.ipynb                                           -- dataset creation
-│       ├── 2.0-compare-classifiers.ipynb                        -- comparison of classifier algorithms
-│       ├── 3.0-tune-hyperparameters.ipynb                    -- hyperparameter tuning on chosen algorithm
-│       ├── 4.0-evaluate-model.ipynb                               -- Model performance on test data
-│       ├── 5.0-feature-importances.ipynb                        -- Feature importance analysis
-│       └── fitted_clf.joblib                                                 -- Persisted train model
-├── myREADME.md                                                       -- Setup instructions and some notes on the modelling procedure
+│       ├── 1.0-dataset.ipynb                       -- dataset creation
+│       ├── 2.0-compare-classifiers.ipynb           -- comparison of classifier algorithms
+│       ├── 3.0-tune-hyperparameters.ipynb          -- hyperparameter tuning on chosen algorithm
+│       ├── 4.0-evaluate-model.ipynb                -- Model performance on test data
+│       ├── 5.0-feature-importances.ipynb           -- Feature importance analysis
+│       └── fitted_clf.joblib                       -- Persisted train model
+├── myREADME.md                                     -- Setup instructions and some notes on the modelling procedure
 ├── README.md
-└── requirements.txt                                                        -- Required libraries
+└── requirements.txt                                -- Required libraries
 
+```
 
 ## Setup
 
